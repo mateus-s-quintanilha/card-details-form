@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+  <div class="content">
+    <div class="wallpaper">
+    </div>
+    <div class="info-content">
+
+      <img class="card-front" src="./images/bg-card-front.png" alt="card front">
+      <div id="front-number">
+        <span id="part1">0000</span> <span id="part2">0000</span> <span id="part3">0000</span> <span id="part4">0000</span> 
+      </div>
+      <span id="card-name">JANE APPLESEED</span>
+      <span id="card-exp">
+        <span id="mm">00</span>/<span id="yy">00</span>
+      </span>
+      <div id="bg-circle">oi</div>
+      <div id="sm-circle"></div>
+
+      <img class="card-back" src="./images/bg-card-back.png" alt="card back">
+      <span id="back-number">000</span>
+
+    </div>
+    <div class="form">
+      <form id="form">
+        <label for="name">CARDHOLDER NAME</label>
+        <input type="text" name="name" id="name" placeholder="e.g.  Jane Appleseed" required> 
+        <div id="start-hidden-name">oi</div>
+
+        <label for="number">CARD NUMBER</label>
+        <input type="text" name="number" id="number" placeholder="e.g.  0123 4567 8901 2345" required>
+        <div id="start-hidden-number"></div>
+
+        <div id="form-numbers">
+            <div id="exp-form-num">
+              <label for="exp_mm">EXP. DATE (MM/YY)</label>
+              <input type="text" name="exp_mm" id="exp_mm" placeholder="MM" required>
+
+              <input type="text" name="exp_yy" id="exp_yy" placeholder="YY" required>
+              <div id="start-hidden-month-year"></div>
+            </div>
+            <div id="cvc-form-num">
+              <label for="cvc_num">CVC</label>
+              <input name="cvc_num" type="text" id="cvc_num" placeholder="e.g. 123">
+              <div id="start-hidden-cvcnumber"></div>
+            </div>
+        </div>
+        
+        <button id="main-button">Confirm</button>
+      </form>
+    </div>
+  </div>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+<script src="./index.js"></script>
+</html>
